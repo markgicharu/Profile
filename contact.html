@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Contact me</title>
+        <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+       
+    </head>
+    <body>
+           <ul class="menubar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        <div class="contact">
+            <div>
+                <p class=" title">
+                   Contact Me
+                 </p>
+               <hr>
+                 <p>
+                  Feel free to get intouch with me and discuss further.<br>
+                  We would love to hear from you.
+                  </p>
+            </div>
+            <div class="contactBox">
+                   <form class="contactBox">
+                       <table id="contactTable">
+                <thead>
+                    <tr>
+                        <td>First name:</td>
+                        <td><input type="text" name="fname" required></td>
+                    </tr>
+                    <tr>
+                        <td>Last name:</td>
+                        <td><input type="text" name="lname" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number:</td>
+                        <td><input type="text" name="pNumber" required></td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit" value="submit" id="submit" onclick="myFunction()">Submit</button></td>
+                        <td><button type="reset" value="reset">Reset</button></td>
+                    </tr>
+                </thead>
+            </table>
+                    </form> 
+            </div>
+            <script>
+          function myFunction() 
+        {
+        document.getElementById("submit");
+        alert("this message has been recieved"); 
+        }
+
+            </script>
+     
+        </div>
+        <div class=" footer">
+            <hr>
+          <footer>
+          <p>copyright 2016 All rights reserved 
+          |  MarkGicharu
+          </p>
+          </footer>
+            <hr>
+        </div>
+    </body>
+</html>
