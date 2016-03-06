@@ -27,24 +27,24 @@
                   </p>
             </div>
             <div class="contactBox">
-                   <form class="contactBox">
+                   <form name="myForm" class="contactBox">
                        <table id="contactTable">
                 <thead>
                     <tr>
                         <td>First name:</td>
-                        <td><input type="text" name="fname" required></td>
+                        <td><input type="text" name="fname"></td>
                     </tr>
                     <tr>
                         <td>Last name:</td>
-                        <td><input type="text" name="lname" required></td>
+                        <td><input type="text" name="lname"></td>
                     </tr>
                     <tr>
                         <td>Email:</td>
-                        <td><input type="email" name="email" required></td>
+                        <td><input type="email" name="email"></td>
                     </tr>
                     <tr>
                         <td>Phone Number:</td>
-                        <td><input type="text" name="pNumber" required></td>
+                        <td><input type="text" name="pNumber"></td>
                     </tr>
                     <tr>
                         <td><button type="submit" value="submit" id="submit" onclick="myFunction()">Submit</button></td>
@@ -55,11 +55,30 @@
                     </form> 
             </div>
             <script>
-          function myFunction() 
-        {
-        document.getElementById("submit");
-        alert("this message has been recieved"); 
-        }
+                function myFunction() {
+                    var x = document.forms["myForm"]["fname"].value;//define variable for first name and assign it
+                    var y = document.forms["myForm"]["lname"].value;//define variable for last name and assign it
+                    var e = document.forms["myForm"]["email"].value;//define variable for email and assign it
+                    var p = document.forms["myForm"]["pNumber"].value;//define variable for  phone number and assign it
+                    /* if the variable assigned value is null
+                     then alert the respective message else confirm form submission*/
+                    if (x== null || x==""){
+                        alert("Please enter your first name ");
+                    }
+                    else if(y== null || y==""){
+                        alert("Please enter your last name ");
+                    }
+                    else if(e== null || e==""){
+                        alert("Please enter your email ");
+                    }
+                    else if(p== null || p==""){
+                        alert("Please enter your phone number ");
+                    }
+                    else {
+                        document.getElementById("submit");
+                        alert("this message has been recieved");
+                    }
+                }
 
             </script>
      
@@ -67,7 +86,7 @@
         <div class=" footer">
             <hr>
           <footer>
-          <p>copyright 2016 All rights reserved 
+          <p id="pfooter">copyright 2016 All rights reserved 
           |  MarkGicharu
           </p>
           </footer>
