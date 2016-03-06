@@ -1,21 +1,23 @@
 
-body {
-}
-.rightBar{
-    background-color: rgba(187, 238, 233, 0.15);
-}
-.leftBar {
-    grid-column-align: center;
+.home{
+    border-collapse: separate;
+    border-spacing: 0px;
     
 }
 .gap{
     height: 10px;
     clear: both;
 }
+/*this configures the footerbox*/
 .footer{
-    vertical-align: middle;
+    alignment-adjust: middle;
+    color: white;
+    background-color: #333;
 }
-
+/*this configures the footerBox text*/
+#pfooter{
+    text-align: center;
+}
 /*this configures all title text*/
 .title{
     text-align: center;
@@ -35,6 +37,7 @@ ul{
 li{
     float: left;
     border-right: 1px solid #bbb;
+    cursor: pointer;
 }
 /*this styles the menulinks*/
 li a {
