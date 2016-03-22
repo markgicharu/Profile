@@ -1,0 +1,63 @@
+
+.home{
+    border-collapse: separate;
+    border-spacing: 0px;
+    
+}
+.gap{
+    height: 10px;
+    clear: both;
+}
+/*this configures the footerbox*/
+.footer{
+    alignment-adjust: middle;
+    color: white;
+    background-color: #333;
+}
+/*this configures the footerBox text*/
+#pfooter{
+    text-align: center;
+}
+/*this configures all title text*/
+.title{
+    text-align: center;
+   
+}
+/*this configures the menubar on all pages*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+li{
+    float: left;
+    border-right: 1px solid #bbb;
+    cursor: pointer;
+}
+/*this styles the menulinks*/
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+/*this styles the images on the portfolio page*/
+.featureImage{
+    border-radius: 50%;
+}
+.aboutTitle{
+    text-align: center;
+    text-emphasis: inherit;
+}

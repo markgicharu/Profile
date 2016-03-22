@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Contact me</title>
+        <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+       
+    </head>
+    <body>
+           <ul class="menubar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        <div class="contact">
+            <div>
+                <p class=" title">
+                   Contact Me
+                 </p>
+               <hr>
+                 <p>
+                  Feel free to get intouch with me and discuss further.<br>
+                  We would love to hear from you.
+                  </p>
+            </div>
+            <div class="contactBox">
+                   <form name="myForm" class="contactBox" method="get" action="mailto:markgicharu@hotmail.com">
+                       <table id="contactTable">
+                <thead>
+                    <tr>
+                        <td>First name:</td>
+                        <td><input type="text" name="fname"></td>
+                    </tr>
+                    <tr>
+                        <td>Last name:</td>
+                        <td><input type="text" name="lname"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number:</td>
+                        <td><input type="text" name="pNumber"></td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit" value="submit" id="submit" onclick="myFunction()">Submit</button></td>
+                        <td><button type="reset" value="reset">Reset</button></td>
+                    </tr>
+                </thead>
+            </table>
+                    </form> 
+            </div>
+            <script>
+                function myFunction() {
+                    var x = document.forms["myForm"]["fname"].value;//define variable for first name and assign it
+                    var y = document.forms["myForm"]["lname"].value;//define variable for last name and assign it
+                    var e = document.forms["myForm"]["email"].value;//define variable for email and assign it
+                    var p = document.forms["myForm"]["pNumber"].value;//define variable for  phone number and assign it
+                    /* if the variable assigned value is null
+                     then alert the respective message else confirm form submission*/
+                    if (x== null || x==""){
+                        alert("Please enter your first name ");
+                    }
+                    else if(y== null || y==""){
+                        alert("Please enter your last name ");
+                    }
+                    else if(e== null || e==""){
+                        alert("Please enter your email ");
+                    }
+                    else if(p== null || p==""){
+                        alert("Please enter your phone number ");
+                    }
+                    else {
+                        document.getElementById("submit");
+                        alert("this message has been recieved");
+                    }
+                }
+
+            </script>
+     
+        </div>
+        <div class=" footer">
+            <hr>
+          <footer>
+          <p id="pfooter">copyright 2016 All rights reserved 
+          |  MarkGicharu
+          </p>
+          </footer>
+            <hr>
+        </div>
+    </body>
+</html>
